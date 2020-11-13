@@ -1,0 +1,241 @@
+<!-- {
+                    "_id": "5d3598a3a38caa57a0272d33", //SERVER GENERATED
+                    "name": "app test 1",
+                    "description": "somthing longer",
+                    "category": "drama",
+                    "imageUrl": "https://drop.ndtv.com/TECH/product_database/images/2152017124957PM_635_nokia_3310.jpeg?downsize=*:420&output-quality=80",
+                    "userId": "admin",  //SERVER GENERATED
+                    "createdAt": "2019-07-22T11:06:11.784Z",  //SERVER GENERATED
+                    "updatedAt": "2019-07-22T11:06:11.784Z",  //SERVER GENERATED
+                    "__v": 0  //SERVER GENERATED
+                }-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+body{
+    background-color: #2c2c2c;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+}
+/*navbar start*/
+nav{
+    background-color: #2c2c2c;
+    box-shadow: 0 4px 4px -3px #3a3a3aa8;
+}
+.navbar{
+    padding: 0 16px!important;
+}
+
+.form-inline i,
+.nav-link{
+    color: #fff!important;
+}
+
+.form-inline img{
+    margin-left:20px;
+}
+.navbar-toggler{
+    color:white;
+    border: 1px solid transparent!important;
+}
+.navbar-toggler i{
+    color:white;
+    font-size: 27px;
+}
+/*navbar end*/
+/*footer start*/
+.mx-auto{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/*footer end*/
+
+/*box start*/
+.container.input{
+    display: flex;
+    justify-content: center;
+    border: grey 3px solid;
+    height: 600px;
+    width: 600px;
+    margin-top: 80px;
+}
+.col-md-6 {
+    margin:auto;
+}
+.insideLogo{
+    margin-left: 48px;
+}
+#description{
+    height: 100px;
+}
+/*box end*/
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand mt-5" href="#"><a href="./index.html"><img src="https://fontmeme.com/permalink/201016/43d068e8e91bfc2ab70c55cd3afe6508.png" alt="netflix-font" border="0" class="mt-2"></a></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tv shows</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./myList.html">My list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./backOffice.html">Back Office</a>
+              </li>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <i class="fas fa-search mr-sm-2"></i>
+            <a class="nav-link mr-sm-2">KIDS</a>
+            <a href="settings.html"><i class="fas fa-bell"></i></a>
+           <a href="account.html"> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png" width=30></a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                </a>
+            </form>
+        </div>
+      </nav>
+<!--NAV END-->
+
+<!--INPUT FORM START-->
+
+<div class = "container input">
+    
+    <div class="col-md-6 offset-md-3">
+        <a class="insideLogo" href="#"><a href="https://fontmeme.com/netflix-font/"><img src="https://fontmeme.com/permalink/201016/43d068e8e91bfc2ab70c55cd3afe6508.png" alt="netflix-font" border="0" class="mt-2"></a></a>
+        <form onsubmit="handleSubmit(event)">
+    <div class="form-group">
+        <label for="name">Image URL</label>
+        <input
+          type="text"
+          class="form-control"
+          id="image"
+          placeholder="URL"
+        />
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="name">Category</label>
+        <input
+          type="text"
+          class="form-control"
+          id="category"
+          placeholder="Category"
+        />
+      </div>
+      <div class="form-group">
+        <label for="name">Description</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          placeholder="Description"
+        />
+      </div>
+      <div class="form-group">
+        <button
+          class="btn btn-danger"
+          type="submit"
+          value="Submit event"
+        >
+          Submit
+        </button>
+        <span
+              class="spinner-border spinner-border-sm d-none"
+              role="status"
+              aria-hidden="true"
+              id="loadingSpinner"
+            ></span>
+            </form>
+      </div>
+      </div>
+</div>
+
+<!--INPUT FORM END-->
+
+      <!--FOOTER START-->
+<footer  class="mx-auto">
+    <div class="container mt-5 mb-3 align-baseline mx-auto">
+        <div class="socials mb-2">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+             </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-3 footer mb-3">        
+            <a class="align-baseline d-block footer-link">Audio and subtitles</a>
+            <a class="align-baseline d-block footer-link">Media center</a>
+            <a class="align-baseline d-block footer-link">Privacy</a>
+            <a class="align-baseline d-block footer-link">Contact us</a>
+            <button class="btn-sm mt-3 btn-footer">Service center</button>
+            </div>
+            <div class="col-sm-12 col-md-3 footer mb-3">
+                <a class="align-baseline d-block footer-link">Audio description</a>
+                <a class="align-baseline d-block footer-link">Speed test</a>
+                <a class="align-baseline d-block footer-link">Investor Relations</a>
+            </div>
+            <div class="col-sm-12 col-md-3 footer mb-3">
+                <a class="align-baseline d-block footer-link">Help Center</a>
+                <a class="align-baseline d-block footer-link">Jobs</a>
+                <a class="align-baseline d-block footer-link">Cookies preferences</a>
+            </div>
+            <div class="col-sm-12 col-md-3 mb-3">
+                <a class="align-baseline d-block footer-link">Gift cards</a>
+                <a class="align-baseline d-block footer-link">Terms of use</a>
+                <a class="align-baseline d-block footer-link">Corporate informations</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!--FOOTER END-->
+</body>
+<!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="backEnd.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</html>
